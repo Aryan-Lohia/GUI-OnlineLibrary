@@ -62,11 +62,11 @@ class librarygui(Tk):
     def home(self):
         self.homeframe = Frame(self)
 
-        label1 = Label(self.homeframe, image=self.bg)
+        label1 = Label(self.homeframe, image=self.bg, borderwidth = 0, highlightthickness = 0)
         label1.image = self.bg
         label1.place(x=0, y=0)
         frame1 = Frame(self.homeframe)
-        label1 = Label(frame1, image=self.bg)
+        label1 = Label(frame1, image=self.bg, borderwidth = 0, highlightthickness = 0)
         label1.image = self.bg
         label1.place(x=0, y=0)
         txt = Label(frame1, text=" : ONLINE LIBRARY : ", bd=10, relief=SUNKEN, bg="cyan", font="arialbold 35 bold")
@@ -106,7 +106,7 @@ class librarygui(Tk):
         self.libraryframe = Frame(self)
         self.c = 1
 
-        label1 = Label(self.libraryframe, image=self.bg)
+        label1 = Label(self.libraryframe, image=self.bg, borderwidth = 0, highlightthickness = 0)
         label1.image = self.bg
         label1.place(x=0, y=0)
         txt = Label(self.libraryframe, text=f" WELCOME \n {self.user} ", bd=10, relief=SUNKEN, bg="cyan",
@@ -131,7 +131,7 @@ class librarygui(Tk):
         self.libraryframe.destroy()
         self.displayframe = Frame(self, bg="black")
         framex = Frame(self.displayframe, bg="black")
-        self.back = Button(framex, text="Goback")
+        self.back = Button(framex, text="Go Back")
         self.back.pack(anchor="w", side=LEFT)
         self.back.bind('<Button-1>', self.goto)
         Label(framex, text="Double Click any book to Open", bg="black", fg="white").pack(side=LEFT, padx=15)
@@ -182,11 +182,11 @@ class librarygui(Tk):
     def request_book(self):
         self.libraryframe.destroy()
         self.displayframe = Frame(self)
-        label1 = Label(self.displayframe, image=self.bg)
+        label1 = Label(self.displayframe, image=self.bg, borderwidth = 0, highlightthickness = 0)
         label1.image = self.bg
         label1.place(x=0, y=0)
         framex = Frame(self.displayframe, bg="black")
-        self.back = Button(framex, text="Goback")
+        self.back = Button(framex, text="Go Back")
         self.back.pack(anchor="w")
         self.back.bind('<Button-1>', self.goto)
         framex.pack(side=TOP, anchor="w")
@@ -229,12 +229,12 @@ class librarygui(Tk):
     def add_book(self):
         self.libraryframe.destroy()
         self.displayframe = Frame(self)
-        label1 = Label(self.displayframe, image=self.bg)
+        label1 = Label(self.displayframe, image=self.bg, borderwidth = 0, highlightthickness = 0)
         label1.image = self.bg
         label1.place(x=0, y=0)
         framex = Frame(self.displayframe, bg="black")
-        self.back = Button(framex, text="Goback")
-        self.back.pack(anchor="w")
+        self.back = Button(framex, text="Go Back")
+        self.back.pack(anchor="w",pady=5)
         self.back.bind('<Button-1>', self.goto)
         framex.pack(side=TOP, anchor="w")
         Label(self.displayframe, text="ENTER NAME OF BOOK", bg="cyan", font="arialbold 35 bold", bd=10,
