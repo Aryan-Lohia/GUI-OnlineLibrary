@@ -1,6 +1,8 @@
 from github import Github,InputGitAuthor
 from pathlib import Path
 import time
+import sys
+sys.path.append('../../')
 import config
 import platform
 
