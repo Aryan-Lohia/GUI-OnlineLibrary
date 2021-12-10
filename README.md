@@ -3,7 +3,10 @@ PLEASE EXCLUDE THIS FOLDER IN WINDOWS DEFENDER AND OTHER ANTIVIRUSES BEFORE YOU 
 THERE IS NO MALWARE\
 IT SHOWS "POTENTIAL VIRUS" COZ IT"S AN EXE FILE BY AN UNSIGNED PUBLISHER.\
 
+REQUIREMENTS:
+Latest Python Version installed and added to path\
 
+STEPS:
 RUN win_OnlineLibrary_setup.bat for WINDOWS\
 RUN linux_OnlineLibrary_setup.sh for Linux\
 run Online Library.exe\
